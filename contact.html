@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Aashiga Moorthy</title>
-    <meta name="description" content="Connect with Aashiga Moorthy via GitHub or professional email.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="loader" class="loader-overlay"><div class="spinner"></div></div>
-
     <header class="navbar-header">
         <nav class="navbar" aria-label="Main Navigation">
-            <a href="index.html" class="nav-logo" aria-label="Aashiga Moorthy Home"><span class="logo-box">AM</span></a>
+            <a href="index.html" class="nav-brand">
+                <span class="brand-avatar">AM</span>
+                <span class="brand-name">aashiga.dev</span>
+            </a>
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
@@ -23,65 +23,59 @@
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="research.html" class="nav-link">Research</a></li>
                     <li><a href="teaching.html" class="nav-link">Teaching</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="resume.pdf" class="nav-link btn-secondary-nav" target="_blank" rel="noopener">Resume</a></li>
                     <li><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-controls">
-                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
-                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+                <button class="hamburger" id="hamburger" aria-label="Menu"><span class="bar"></span><span class="bar"></span></button>
             </div>
         </nav>
     </header>
 
-    <main id="main-content" class="section">
+    <main class="section">
         <div class="container">
-            <header class="page-header scroll-reveal">
-                <h1 class="page-title">Get in Touch</h1>
-                <p class="page-subtitle">Open to academic inquiries, research discussions, and software collaborations.</p>
-            </header>
+            <div class="page-header">
+                <span class="section-tag">Reach Out</span>
+                <h1>Get in Touch</h1>
+                <p class="subtitle">Open to academic discussions, research inquiries, and software development collaborations.</p>
+            </div>
 
-            <div class="contact-grid">
-                <div class="card scroll-reveal">
-                    <h2>Connect Online</h2>
-                    <p>Feel free to explore my repositories on GitHub or download my academic resume.</p>
-                    
-                    <div class="contact-links">
+            <div class="contact-card-grid">
+                <div class="contact-box">
+                    <h2>Connect & Explore</h2>
+                    <p>Feel free to reach out directly via GitHub or email.</p>
+
+                    <div class="contact-links-list">
                         <a href="https://github.com/AashigaM" class="btn btn-outline btn-full" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                            GitHub Profile (github.com/AashigaM)
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub Profile (@AashigaM)
                         </a>
 
                         <a href="mailto:aashiga.placeholder@example.com" class="btn btn-outline btn-full">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            Professional Email (Contact Placeholder)
-                        </a>
-
-                        <a href="resume.pdf" class="btn btn-primary btn-full" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-                            Download Academic Resume
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Send an Email
                         </a>
                     </div>
                 </div>
 
-                <div class="card scroll-reveal">
+                <div class="contact-box">
                     <h2>Send a Message</h2>
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message feature placeholder: In production, connected to a serverless backend/form service.');">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                    <form class="simple-form" onsubmit="event.preventDefault(); alert('Message feature placeholder: Add your form handler or email service here!');">
+                        <div class="form-field">
+                            <label for="c-name">Name</label>
+                            <input type="text" id="c-name" class="input-element" placeholder="Your name" required>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-input" placeholder="your.email@example.com" required>
+                        <div class="form-field">
+                            <label for="c-email">Email</label>
+                            <input type="email" id="c-email" class="input-element" placeholder="your.email@example.com" required>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-input" rows="4" placeholder="Your message..." required></textarea>
+                        <div class="form-field">
+                            <label for="c-msg">Message</label>
+                            <textarea id="c-msg" class="input-element" rows="4" placeholder="Your message..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">Send Message</button>
                     </form>
@@ -91,17 +85,18 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info"><span class="footer-logo">AM</span><p>&copy; 2026 Aashiga Moorthy.</p></div>
-            <div class="footer-links">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-brand">Aashiga Moorthy</span>
+                <p>&copy; 2026. Built with HTML, CSS & Vanilla JavaScript.</p>
+            </div>
+            <div class="footer-right">
                 <a href="https://github.com/AashigaM" target="_blank" rel="noopener">GitHub</a>
                 <a href="contact.html">Contact</a>
-                <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
             </div>
         </div>
     </footer>
 
-    <button id="backToTop" class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
     <script src="js/script.js"></script>
 </body>
 </html>
