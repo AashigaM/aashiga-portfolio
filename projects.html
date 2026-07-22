@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Aashiga Moorthy</title>
+    <meta name="description" content="Portfolio of software, web development, and interactive science projects by Aashiga Moorthy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loader" class="loader-overlay"><div class="spinner"></div></div>
+
+    <header class="navbar-header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="index.html" class="nav-logo" aria-label="Aashiga Moorthy Home"><span class="logo-box">AM</span></a>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="resume.pdf" class="nav-link btn-secondary-nav" target="_blank" rel="noopener">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="section">
+        <div class="container">
+            <header class="page-header scroll-reveal">
+                <h1 class="page-title">Featured Projects</h1>
+                <p class="page-subtitle">A collection of research showcases, web applications, and interactive software.</p>
+            </header>
+
+            <div class="projects-list">
+                
+                <article class="card project-card scroll-reveal" id="p1">
+                    <div class="project-header">
+                        <h2>Future AI: Exploring Artificial Intelligence</h2>
+                        <div class="project-links">
+                            <a href="https://aashigam.github.io/de-webdev-future-ai-web-research/#top" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="https://github.com/AashigaM/de-webdev-future-ai-web-research" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">A research-based digital showcase exploring artificial intelligence including Machine Learning, Natural Language Processing, Computer Vision, autonomous systems, and real-world AI applications.</p>
+                    <div class="tag-group">
+                        <span class="tag">HTML5</span><span class="tag">CSS Grid</span><span class="tag">Flexbox</span><span class="tag">Semantic HTML</span><span class="tag">Academic Research</span><span class="tag">Responsive Design</span>
+                    </div>
+                    <button class="case-study-toggle" onclick="toggleCaseStudy('cs1')">View Case Study <span class="arrow">&darr;</span></button>
+
+                    <div id="cs1" class="case-study-content hidden">
+                        <div class="case-study-grid">
+                            <div><strong>Problem:</strong> Explaining advanced AI concepts clearly without losing technical accuracy or structure.</div>
+                            <div><strong>Approach:</strong> Structured modular layouts separating sub-disciplines (NLP, CV, Autonomy) with custom CSS grid layouts.</div>
+                            <div><strong>Technical Challenges:</strong> Managing deep structural hierarchy and ensuring high contrast and legibility across complex academic sections.</div>
+                            <div><strong>Results:</strong> Created an intuitive, comprehensive reference showcase for fundamental AI concepts.</div>
+                            <div><strong>Future Improvements:</strong> Integrating interactive dynamic visualizations of neural network node activations.</div>
+                            <div><strong>Lessons Learned:</strong> Clear information architecture is critical when presenting complex technical literature.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card scroll-reveal" id="p2">
+                    <div class="project-header">
+                        <h2>Runway Magazine Digital Showcase</h2>
+                        <div class="project-links">
+                            <a href="https://aashigam.github.io/de-webdev-runway-magazine/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="https://github.com/AashigaM/de-webdev-runway-magazine" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">A multi-page digital magazine website demonstrating professional navigation, typography, layout design, and user experience.</p>
+                    <div class="tag-group">
+                        <span class="tag">Multi-Page Architecture</span><span class="tag">Semantic HTML</span><span class="tag">CSS Styling</span><span class="tag">Responsive Layouts</span><span class="tag">UI/UX</span>
+                    </div>
+                    <button class="case-study-toggle" onclick="toggleCaseStudy('cs2')">View Case Study <span class="arrow">&darr;</span></button>
+
+                    <div id="cs2" class="case-study-content hidden">
+                        <div class="case-study-grid">
+                            <div><strong>Problem:</strong> Designing an editorial UI that balances dense multimedia with editorial visual hierarchy.</div>
+                            <div><strong>Approach:</strong> Used CSS grid-template-areas and fluid typography to construct editorial columns.</div>
+                            <div><strong>Technical Challenges:</strong> Cross-browser alignment of sticky sub-headers and flexible hero image proportions.</div>
+                            <div><strong>Results:</strong> Successfully implemented a high-fashion, high-performance web publication structure.</div>
+                            <div><strong>Future Improvements:</strong> Adding client-side search filtering for magazine back-issues.</div>
+                            <div><strong>Lessons Learned:</strong> Scalable layout primitives ensure consistency across varying page structures.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card scroll-reveal" id="p3">
+                    <div class="project-header">
+                        <h2>CSS Styling & Interactivity Showcase</h2>
+                        <div class="project-links">
+                            <a href="https://aashigam.github.io/de-webdev-CSS-styling/#top" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="https://github.com/AashigaM/de-webdev-CSS-styling" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">An interactive CSS showcase demonstrating the transformation of basic HTML into a fully styled experience using animations and interactive components.</p>
+                    <div class="tag-group">
+                        <span class="tag">CSS Animations</span><span class="tag">Keyframes</span><span class="tag">Transforms</span><span class="tag">Transitions</span><span class="tag">UI Design</span>
+                    </div>
+                    <button class="case-study-toggle" onclick="toggleCaseStudy('cs3')">View Case Study <span class="arrow">&darr;</span></button>
+
+                    <div id="cs3" class="case-study-content hidden">
+                        <div class="case-study-grid">
+                            <div><strong>Problem:</strong> Creating engagement through pure CSS without relying on heavy JavaScript libraries.</div>
+                            <div><strong>Approach:</strong> Utilized keyframe sequences, custom properties, and GPU-accelerated transform properties.</div>
+                            <div><strong>Technical Challenges:</strong> Avoiding layout reflows and repaints during complex state changes.</div>
+                            <div><strong>Results:</strong> Smooth 60fps animations running natively on CSS execution threads.</div>
+                            <div><strong>Future Improvements:</strong> Adding dynamic custom property manipulation driven by mouse vectors.</div>
+                            <div><strong>Lessons Learned:</strong> Deep knowledge of browser rendering pipelines makes UI animations performant.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card scroll-reveal" id="p4">
+                    <div class="project-header">
+                        <h2>Media Integration Showcase</h2>
+                        <div class="project-links">
+                            <a href="https://aashigam.github.io/de-webdev-media-integration/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="https://github.com/AashigaM/de-webdev-media-integration" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">A multimedia web project demonstrating image, audio, video, and animated media integration.</p>
+                    <div class="tag-group">
+                        <span class="tag">HTML5 Multimedia</span><span class="tag">Media Optimization</span><span class="tag">Accessibility</span><span class="tag">Layout Design</span>
+                    </div>
+                    <button class="case-study-toggle" onclick="toggleCaseStudy('cs4')">View Case Study <span class="arrow">&darr;</span></button>
+
+                    <div id="cs4" class="case-study-content hidden">
+                        <div class="case-study-grid">
+                            <div><strong>Problem:</strong> Embedding diverse media formats without degrading initial load time or web accessibility.</div>
+                            <div><strong>Approach:</strong> Lazy-loading assets and implementing explicit web accessibility attributes for video/audio elements.</div>
+                            <div><strong>Technical Challenges:</strong> Handling responsive aspect ratios across diverse viewport dimensions.</div>
+                            <div><strong>Results:</strong> Accessible, fast-loading media showcase passing WCAG compliance benchmarks.</div>
+                            <div><strong>Future Improvements:</strong> Adding custom custom web audio visualizers in JS Canvas.</div>
+                            <div><strong>Lessons Learned:</strong> Media loading strategies dramatically affect core web performance metrics.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card scroll-reveal" id="p5">
+                    <div class="project-header">
+                        <h2>Stellar Data and Element Origins</h2>
+                        <div class="project-links">
+                            <a href="https://polite-tapioca-694da4.netlify.app/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">An interactive educational application exploring stellar evolution, spectroscopy, and the origins of chemical elements through simulations.</p>
+                    <div class="tag-group">
+                        <span class="tag">JavaScript</span><span class="tag">Interactive Simulations</span><span class="tag">Dynamic Rendering</span><span class="tag">EdTech</span><span class="tag">Vite</span>
+                    </div>
+                    <button class="case-study-toggle" onclick="toggleCaseStudy('cs5')">View Case Study <span class="arrow">&darr;</span></button>
+
+                    <div id="cs5" class="case-study-content hidden">
+                        <div class="case-study-grid">
+                            <div><strong>Problem:</strong> Making complex astrophysical processes like stellar nucleosynthesis accessible interactively.</div>
+                            <div><strong>Approach:</strong> Engineered dynamic DOM state updates driven by user control parameters for temperature and mass.</div>
+                            <div><strong>Technical Challenges:</strong> Balancing accurate scientific dynamic mapping with clear web visualizations.</div>
+                            <div><strong>Results:</strong> Highly engaging simulation tool utilized by students to understand chemical origin models.</div>
+                            <div><strong>Future Improvements:</strong> Integrating Canvas 2D particle simulation for supernova shockwaves.</div>
+                            <div><strong>Lessons Learned:</strong> Interactive feedback loops enhance comprehension in STEM education software.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card scroll-reveal" id="p6">
+                    <div class="project-header">
+                        <h2>Sunnyvale Real-Time AQI and Weather Tracker</h2>
+                        <div class="project-links">
+                            <a href="https://comforting-cascaron-6b9a16.netlify.app/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">A real-time environmental dashboard displaying AQI and weather information using external APIs.</p>
+                    <div class="tag-group">
+                        <span class="tag">REST APIs</span><span class="tag">JavaScript</span><span class="tag">Data Visualization</span><span class="tag">Dynamic Updates</span><span class="tag">Environmental</span>
+                    </div>
+                    <button class="case-study-toggle" onclick="toggleCaseStudy('cs6')">View Case Study <span class="arrow">&darr;</span></button>
+
+                    <div id="cs6" class="case-study-content hidden">
+                        <div class="case-study-grid">
+                            <div><strong>Problem:</strong> Communicating complex air quality indexed data in real-time with zero friction.</div>
+                            <div><strong>Approach:</strong> Asynchronous JavaScript (Fetch API) retrieving payloads from public REST API services.</div>
+                            <div><strong>Technical Challenges:</strong> Handling API rate limits, edge case error handling, and latency states gracefully.</div>
+                            <div><strong>Results:</strong> Reliable, clean local environmental tracker updated dynamically on dynamic fetches.</div>
+                            <div><strong>Future Improvements:</strong> Adding local storage location caching and historic trend line charts.</div>
+                            <div><strong>Lessons Learned:</strong> Robust error states are necessary when depending on third-party API networks.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <h2 class="section-heading scroll-reveal" style="margin-top: 3rem;">Projects In Progress</h2>
+
+                <article class="card project-card coming-soon scroll-reveal">
+                    <div class="project-header">
+                        <div>
+                            <h2>AI Mental Health Platform</h2>
+                            <span class="badge badge-accent">In Development</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">An AI-powered platform inspired by my research exploring responsible technology solutions for student mental well-being.</p>
+                    <div class="tag-group">
+                        <span class="tag">Conversational AI</span><span class="tag">Responsible AI</span><span class="tag">Student Wellness</span>
+                    </div>
+                </article>
+
+                <article class="card project-card coming-soon scroll-reveal">
+                    <div class="project-header">
+                        <div>
+                            <h2>Passion Project</h2>
+                            <span class="badge">Planning Phase</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">A future software engineering project exploring computer science, artificial intelligence, and real-world problem solving.</p>
+                    <div class="tag-group">
+                        <span class="tag">Computer Science</span><span class="tag">Applied AI</span><span class="tag">Software Systems</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info"><span class="footer-logo">AM</span><p>&copy; 2026 Aashiga Moorthy.</p></div>
+            <div class="footer-links">
+                <a href="https://github.com/AashigaM" target="_blank" rel="noopener">GitHub</a>
+                <a href="contact.html">Contact</a>
+                <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
+    <script src="js/script.js"></script>
+</body>
+</html>
