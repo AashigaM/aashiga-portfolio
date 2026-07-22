@@ -1,36 +1,18 @@
 /**
- * Portfolio Interactive Controller
- * Author: Aashiga Moorthy
- * Scope: Theme Toggling, Mobile Navigation, Scroll Animations, Dynamic Interactions
+ * Aashiga Moorthy Portfolio - Interactivity Controller
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    initLoader();
     initThemeToggle();
     initMobileNav();
     initScrollReveal();
-    initBackToTop();
 });
 
-/* --- Loader Controller --- */
-function initLoader() {
-    const loader = document.getElementById('loader');
-    if (loader) {
-        window.addEventListener('load', () => {
-            loader.classList.add('hidden');
-        });
-        // Fallback safety timeout
-        setTimeout(() => {
-            loader.classList.add('hidden');
-        }, 800);
-    }
-}
-
-/* --- Dark/Light Mode Switcher --- */
+/* Theme Switcher */
 function initThemeToggle() {
-    const themeToggleBtn = document.getElementById('themeToggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const themeBtn = document.getElementById('themeToggle');
     const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
@@ -38,54 +20,35 @@ function initThemeToggle() {
         document.documentElement.setAttribute('data-theme', 'dark');
     }
 
-    if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('theme', target);
         });
     }
 }
 
-/* --- Mobile Navigation Hamburger Menu --- */
+/* Mobile Nav Drawer */
 function initMobileNav() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
 
-        // Close menu on link click
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
             });
         });
     }
 }
 
-/* --- Case Study Toggle (Projects Page) --- */
-function toggleCaseStudy(id) {
-    const csElement = document.getElementById(id);
-    if (csElement) {
-        csElement.classList.toggle('hidden');
-        const button = csElement.previousElementSibling;
-        if (button && button.classList.contains('case-study-toggle')) {
-            const isHidden = csElement.classList.contains('hidden');
-            button.innerHTML = isHidden 
-                ? 'View Case Study <span class="arrow">&darr;</span>' 
-                : 'Hide Case Study <span class="arrow">&uarr;</span>';
-        }
-    }
-}
-
-/* --- Scroll Reveal Animations --- */
+/* Scroll Reveal Observer */
 function initScrollReveal() {
     const revealElements = document.querySelectorAll('.scroll-reveal');
 
@@ -96,31 +59,8 @@ function initScrollReveal() {
             }
         });
     }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.1
     });
 
     revealElements.forEach(el => observer.observe(el));
-}
-
-/* --- Back To Top Button --- */
-function initBackToTop() {
-    const backToTopBtn = document.getElementById('backToTop');
-
-    if (backToTopBtn) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        });
-
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
 }
