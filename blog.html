@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Blog | Aashiga Moorthy</title>
+    <meta name="description" content="Technical reflections, learnings, and insights on computer science and AI by Aashiga Moorthy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loader" class="loader-overlay"><div class="spinner"></div></div>
+
+    <header class="navbar-header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="index.html" class="nav-logo" aria-label="Aashiga Moorthy Home"><span class="logo-box">AM</span></a>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="resume.pdf" class="nav-link btn-secondary-nav" target="_blank" rel="noopener">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="section">
+        <div class="container">
+            <header class="page-header scroll-reveal">
+                <h1 class="page-title">Technical Writing & Insights</h1>
+                <p class="page-subtitle">Reflections on software development, AI systems, and academic growth.</p>
+            </header>
+
+            <div class="blog-list">
+                
+                <article class="card blog-card scroll-reveal">
+                    <div class="blog-meta"><span>July 2026</span> &bull; <span>Technical Writing</span></div>
+                    <h2>Lessons Learned Building My First Web Systems</h2>
+                    <p>Reflecting on the evolution from static HTML elements to reactive DOM state manipulation, asynchronous API fetches, and maintainable CSS architectures.</p>
+                    <a href="#" class="link-arrow disabled">Read Article Coming Soon &rarr;</a>
+                </article>
+
+                <article class="card blog-card scroll-reveal">
+                    <div class="blog-meta"><span>June 2026</span> &bull; <span>Artificial Intelligence</span></div>
+                    <h2>Exploring Artificial Intelligence: Beyond the Hype</h2>
+                    <p>A breakdown of foundational machine learning concepts versus modern generative AI models, examining where real utility meets mathematical theory.</p>
+                    <a href="#" class="link-arrow disabled">Read Article Coming Soon &rarr;</a>
+                </article>
+
+                <article class="card blog-card scroll-reveal">
+                    <div class="blog-meta"><span>May 2026</span> &bull; <span>Education & Technology</span></div>
+                    <h2>Designing Educational Software That Inspires Curiosity</h2>
+                    <p>How interactive astrophysics simulations can demystify complex scientific domain models for high school students through active feedback loops.</p>
+                    <a href="#" class="link-arrow disabled">Read Article Coming Soon &rarr;</a>
+                </article>
+
+                <article class="card blog-card scroll-reveal">
+                    <div class="blog-meta"><span>April 2026</span> &bull; <span>Research Methodology</span></div>
+                    <h2>What I Learned From Conducting Independent AI Research</h2>
+                    <p>The challenges of designing valid surveys, isolating parameters in human-centered AI evaluation, and writing rigorous academic documentation.</p>
+                    <a href="#" class="link-arrow disabled">Read Article Coming Soon &rarr;</a>
+                </article>
+
+                <article class="card blog-card scroll-reveal">
+                    <div class="blog-meta"><span>March 2026</span> &bull; <span>Computer Science Journey</span></div>
+                    <h2>Beginning My Programming Journey</h2>
+                    <p>How curiosity about how software functions transformed into dual enrollment coursework, coding instruction, and software development.</p>
+                    <a href="#" class="link-arrow disabled">Read Article Coming Soon &rarr;</a>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info"><span class="footer-logo">AM</span><p>&copy; 2026 Aashiga Moorthy.</p></div>
+            <div class="footer-links">
+                <a href="https://github.com/AashigaM" target="_blank" rel="noopener">GitHub</a>
+                <a href="contact.html">Contact</a>
+                <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
+    <script src="js/script.js"></script>
+</body>
+</html>
