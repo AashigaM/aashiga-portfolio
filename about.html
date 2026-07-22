@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Aashiga Moorthy</title>
-    <meta name="description" content="Biography and academic background of Aashiga Moorthy, a rising high school senior interested in CS, AI, and Software Engineering.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="loader" class="loader-overlay"><div class="spinner"></div></div>
-
     <header class="navbar-header">
         <nav class="navbar" aria-label="Main Navigation">
-            <a href="index.html" class="nav-logo" aria-label="Aashiga Moorthy Home"><span class="logo-box">AM</span></a>
+            <a href="index.html" class="nav-brand">
+                <span class="brand-avatar">AM</span>
+                <span class="brand-name">aashiga.dev</span>
+            </a>
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
@@ -23,85 +23,106 @@
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="research.html" class="nav-link">Research</a></li>
                     <li><a href="teaching.html" class="nav-link">Teaching</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="resume.pdf" class="nav-link btn-secondary-nav" target="_blank" rel="noopener">Resume</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-controls">
-                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
-                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+                <button class="hamburger" id="hamburger" aria-label="Menu"><span class="bar"></span><span class="bar"></span></button>
             </div>
         </nav>
     </header>
 
-    <main id="main-content" class="section">
+    <main class="section">
         <div class="container">
-            <header class="page-header scroll-reveal">
-                <h1 class="page-title">About Me</h1>
-                <p class="page-subtitle">Background, core interests, and academic motivation.</p>
-            </header>
+            <div class="page-header">
+                <span class="section-tag">Biography</span>
+                <h1>About Me</h1>
+            </div>
 
-            <div class="about-grid">
-                <div class="about-main scroll-reveal">
-                    <h2>Biography</h2>
-                    <p class="lead">I am a rising high school senior based in California with a deep interest in computer science, machine learning, and human-centered technology.</p>
-                    <p>My journey into computer science stems from a curiosity about how software systems scale and how intelligent models can be leveraged to address complex social problems. Over the past few years, I have supplemented my high school education with advanced collegiate dual enrollment coursework in computer science and web development.</p>
-                    <p>Beyond traditional coursework, my experience includes conducting independent academic research on the psychological impacts of conversational AI, building interactive simulation systems, and founding programming workshops to teach introductory coding to younger students in my community.</p>
+            <div class="about-layout">
+                <div class="about-bio">
+                    <p class="bio-lead">
+                        I am a rising high school senior based in California with a passion for computer science, artificial intelligence, and building software that addresses real human needs.
+                    </p>
+                    <p>
+                        My journey in computing started with a curiosity about how software shapes our daily interactions. To deepen my technical foundation, I took on dual enrollment college coursework alongside my high school curriculum, learning software development principles, responsive web architecture, and dynamic data structures.
+                    </p>
+                    <p>
+                        Currently, my work spans three core areas: conducting independent academic research on conversational AI and teen mental well-being, building interactive web apps and science simulations, and teaching introductory coding to younger students through community workshops.
+                    </p>
 
-                    <div class="divider-line"></div>
+                    <div class="divider"></div>
 
-                    <h2>Academic Milestones & Initiatives</h2>
-                    <ul class="custom-list">
-                        <li><strong>Dual Enrollment Coursework:</strong> Completed rigorous college-level computer science and development classes alongside high school curriculum.</li>
-                        <li><strong>Independent AI Research:</strong> Authoring an academic paper investigating the influence of conversational chatbots on teen emotional health.</li>
-                        <li><strong>Community Education:</strong> Founded and hosted coding workshops focused on foundational programming concepts and web engineering.</li>
-                        <li><strong>Full-Stack & Web Projects:</strong> Developed web applications ranging from interactive physics and astronomy simulators to real-time environmental API dashboards.</li>
-                    </ul>
+                    <h2 class="subheading">Academic Highlights & Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="time-period">Present</span>
+                            <div class="time-content">
+                                <h3>Independent AI Research</h3>
+                                <p>Investigating the psychological and social effects of AI chatbots on adolescent emotional health.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time-period">2024 &ndash; Present</span>
+                            <div class="time-content">
+                                <h3>Founder & Workshop Instructor</h3>
+                                <p>Designed curriculum and conducted coding workshops to teach beginner programming and web development.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time-period">Dual Enrollment</span>
+                            <div class="time-content">
+                                <h3>College Coursework in CS</h3>
+                                <p>Completed college-level courses in computer science, software development, and modern web frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="about-sidebar scroll-reveal">
-                    <div class="card meta-card">
-                        <h3>Quick Facts</h3>
-                        <dl class="meta-list">
-                            <dt>Name</dt><dd>Aashiga Moorthy</dd>
-                            <dt>Status</dt><dd>Rising High School Senior</dd>
-                            <dt>Location</dt><dd>California, USA</dd>
-                            <dt>Intended Major</dt><dd>Computer Science</dd>
-                        </dl>
-                    </div>
-
-                    <div class="card meta-card">
-                        <h3>Core Interests</h3>
-                        <ul class="pill-list">
-                            <li class="pill">Artificial Intelligence</li>
-                            <li class="pill">Machine Learning</li>
-                            <li class="pill">Software Engineering</li>
-                            <li class="pill">Web Development</li>
-                            <li class="pill">Human-Centered Tech</li>
-                            <li class="pill">Ethical AI</li>
+                <aside class="about-sidebar">
+                    <div class="sidebar-box">
+                        <h3>Quick Profile</h3>
+                        <ul class="info-list">
+                            <li><strong>Name:</strong> Aashiga Moorthy</li>
+                            <li><strong>Status:</strong> Rising High School Senior</li>
+                            <li><strong>Location:</strong> California, USA</li>
+                            <li><strong>Intended Major:</strong> Computer Science</li>
                         </ul>
                     </div>
-                </div>
+
+                    <div class="sidebar-box">
+                        <h3>Interests</h3>
+                        <div class="chip-container">
+                            <span class="chip">Artificial Intelligence</span>
+                            <span class="chip">Machine Learning</span>
+                            <span class="chip">Software Engineering</span>
+                            <span class="chip">Web Systems</span>
+                            <span class="chip">Human-Centered Tech</span>
+                            <span class="chip">Ethical AI</span>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info"><span class="footer-logo">AM</span><p>&copy; 2026 Aashiga Moorthy.</p></div>
-            <div class="footer-links">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-brand">Aashiga Moorthy</span>
+                <p>&copy; 2026. Built with HTML, CSS & Vanilla JavaScript.</p>
+            </div>
+            <div class="footer-right">
                 <a href="https://github.com/AashigaM" target="_blank" rel="noopener">GitHub</a>
                 <a href="contact.html">Contact</a>
-                <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
             </div>
         </div>
     </footer>
 
-    <button id="backToTop" class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
     <script src="js/script.js"></script>
 </body>
 </html>
